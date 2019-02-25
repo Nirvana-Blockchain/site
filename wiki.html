@@ -1,272 +1,325 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<title>Nirvana Wiki</title>
+    <title>Bootstrap 4 project documentation theme for developers</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link
+        href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js"
+        integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a"
+        crossorigin="anonymous"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="plugins/prism/prism.css">
+    <link rel="stylesheet" href="plugins/elegant_font/css/style.css">
 
-	<!-- meta -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- css -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/ionicons.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/owl.carousel.css">
-	<link rel="stylesheet" href="css/owl.theme.css">
-	<link rel="stylesheet" href="css/owl.transitions.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/custom.css">
-	<link rel="stylesheet" href="css/wiki.css">
-
-	<!-- js -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/isotope.pkgd.min.js"></script>
-	<script src="js/script.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/jquery.actual.min.js"></script>
-
-
-
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="css/wiki.css">
 
 </head>
 
-<body>
-	<div id="wrapper2">
-		<div id="">
-			<section id="navigation">
-				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<body class="body-green">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container" style="margin-left: 5%">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <img style="display: inline; width: 14%" id="main-logo"
+                                src="nirvana-logo-with-orange.svg" />
 
-					<div class="container-fluid">
+                        </a>
+                    </h1>
+                </div>
+                <!--//branding-->
 
-						<div class="navbar-header"><a href="https://nirvana-blockchain.github.io/web">
-							<img style="display: inline; width: 60%" id="main-logo" src="nirvana-logo-with-orange.svg" />
-						</a>
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-								<span class="ion-navicon"></span>
-							</button>
+            </div>
+            <!--//container-->
+        </header>
+        <!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><i class="icon fa fa-paper-plane"></i>Api Docs</h1>
+                    <div class="meta"><i class="far fa-clock"></i> Last updated: February 22nd, 2019</div>
+                </div>
+                <!--//doc-header-->
+                <div class="doc-body row">
+                    <div class="doc-content col-md-9 col-12 order-1">
+                        <div class="content-inner">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="ethereum-overview" role="tabpanel"
+                                    aria-labelledby="v-pills-home-tab">
+                                    <section id="download-section" class="doc-section">
+                                        <h2 class="section-title">Overview of Ethereum</h2>
+                                        <div class="section-block">
+                                            <p>Ethereum is an open-source, public, blockchain-based distributed
+                                                computing platform and operating system featuring smart contract
+                                                (scripting) functionality. It supports a modified version of Nakamoto
+                                                consensus via transaction-based state transitions. </p>
+                                            <p> We can also say Ethereum is a programmable blockchain that will serve a
+                                                majority of B2C enterprise in the future. Ethereum gives developers the
+                                                freedom of creating complex models to be executed on the blockchain.</p>
 
-						</div>
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav navbar-right">
-							
-							</ul>
-						</div>
-						<!-- collapse navbar-collapse -->
-					</div>
-					<!-- container-fluid -->
-				</nav>
-				<!-- navbar -->
-			</section>
-			<!-- #navigation -->
+                                            <p> Ethereum network consist of two major thing on which the whole ecosystem
+                                                works
 
+                                            </p>
 
-			<!-- Wiki Header-->
+                                            <h3 class="block-title">Ethereum Accounts</h3>
+                                            <p>
+                                                The Ethereum has two types of accounts
+                                            </p>
 
-			<div class="doc-wrapper">
-				<div class="container">
-					<div id="doc-header" class="doc-header text-center">
-						<h1 class="doc-title"> Documentation</h1>
-						<div class="meta">Last updated: Feb 5th, 2019</div>
-					</div>
+                                            <ul class="list">
+                                                <li>External Accounts.</li>
+                                                <li>Contract Accounts</li>
+                                            </ul>
+                                            <p>
+                                                both External and Contract are referred to as “state objects” which tell
+                                                the state of Ethereum network and is owned by external user and miner
+                                                and is generally controlled with public key cryptography algorithms like
+                                                RSA and serves as a medium for users to interact with block chain
+                                            </p>
+                                            <p>
+                                                Contract accounts are a collection of code residing on the blockchain at
+                                                a specific address. These contracts are invoked by external accounts, or
+                                                by other contracts through a specific call-to-action function. These
+                                                contracts are written in high-level scripting languages like Solidity,
+                                                Serpent or LLL. Every contract that resides on the ethereum blockchain
+                                                is stored in a specific format called EVM (Ethereum Virtual Machine)
+                                                bytecode which is an ethereum specific binary format.
+                                            </p>
+                                            <h3 class="block-title">Ethereum Virtual Machine</h3>
+                                            <p>
+                                                The Ethereum Virtual Machine (EVM) is the runtime environment for smart
+                                                contracts in Ethereum. It is the fundamental consensus mechanism for
+                                                Ethereum. And is responsible for executing all transections
+                                            </p>
 
-					<div class="doc-body row">
-						<div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
-							<div id="doc-nav" class="doc-nav">
+                                            <!-- <a href="https://themes.3rdwavemedia.com" class="btn btn-green" target="_blank"><i
+                                                    class="fas fa-download"></i> Download PrettyDocs</a> -->
+                                        </div>
+                                    </section>
 
-								<nav id="doc-menu" class="nav doc-menu flex-column sticky">
-										<a class="nav-link scrollto main-heading" id="nirvana" href="#nirvana">Nirvana</a>
-										<a class="nav-link scrollto main-heading" id="components" href="#components">Components</a>
-										<a class="nav-link scrollto main-heading" id="whynirvana" href="#whynirvana">Why Nirvana</a>
-										<a class="nav-link scrollto main-heading" id="aboutus" href="#aboutus">About Us</a>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-geting-started" role="tabpanel"
+                                    aria-labelledby="v-pills-getting-started-tab">
 
-											
-									
+                                    <section id="getting-started-section" class="doc-section">
+                                        <h2 class="section-title">Getting Started </h2>
+                                        <div class="section-block">
+                                            <p>The Nirwana library is a collection API wrapper and modules which contain
+                                                functionality for the Ethereum ecosystem to build DAPPs over Ethereum
+                                            </p>
+                                            <p>Nirwana wrap the complexity of Web3 API in Simple Rest API interface for
+                                                developer to quick start development and hiding complex code behind API.
+                                            </p>
 
-									<!-- <a class="nav-link scrollto" href="#download-section">Download</a>
-									
-									
-									//nav-->
-									<!-- <a class="scrollto" href="#code-section">Code</a>
+                                            <strong> Below are the main feature which nirvana provides</strong>
 
+                                            <ul>
+                                                <li>Easy and Quick Infrastructure setup</li>
+                                                <li>Prebuild module like wallet API and Contract Deployment</li>
+                                                <li>DApps client can be created over multiple platform (Android , iOS
+                                                    ,Web)</li>
+                                                <li>Developer has to worry about business logic implementation rather
+                                                    than writing Dapp from scratch</li>
+                                                <li>Module and Scalable as its open source </li>
 
-									<nav class="doc-sub-menu nav flex-column">
-										<a class="nav-link scrollto" href="#html">HTML</a>
-										<a class="nav-link scrollto" href="#css">CSS</a>
-										<a class="nav-link scrollto" href="#sass">Sass</a>
-										<a class="nav-link scrollto" href="#less">LESS</a>
-										<a class="nav-link scrollto" href="#javascript">JavaScript</a>
-										<a class="nav-link scrollto" href="#python">Python</a>
-										<a class="nav-link scrollto" href="#php">PHP</a>
-										<a class="nav-link scrollto" href="#handlebars">Handlebars</a>
-									</nav> -->
-									<!--//nav-->
-									<!-- <a class="nav-link scrollto" href="#callouts-section">Callouts</a>
-									<a class="nav-link scrollto" href="#tables-section">Tables</a>
-									<a class="nav-link scrollto" href="#buttons-section">Buttons</a>
-									<a class="nav-link scrollto" href="#video-section">Video</a>
-									<a class="nav-link scrollto" href="#icons-section">Icons</a> -->
-								</nav>
-								<!--//doc-menu-->
+                                            </ul>
+                                            <p>Nirwana covers below mentioned modules for Ethereum block chain which are
+                                                wrapped using RestAPIs</p>
+                                            <ul>
+                                                <li>The web3-eth is for the Ethereum blockchain and smart contracts</li>
+                                                <li>The web3-shh is for the whisper protocol to communicate p2p and
+                                                    broadcast</li>
+                                                <li>The web3-bzz is for the swarm protocol, the decentralized file
+                                                    storage </li>
+                                                <li>The web3-utils contains useful helper functions for Dapp developers.
+                                                </li>
+                                            </ul>
 
-							</div>
-						</div>
-						<!--//doc-sidebar-->
-						<div class="doc-content col-md-9 col-12 order-1" >
-							<div class="content-inner" id="content-inner-html">
+                                            <h3 class="block-title"> Setting Up Nirwana</h3>
+                                            <ul>
+                                                <li>Steps to install and Run docker over cloud</li>
+                                                <li>Setup Socket IO at client side for getting block chain event</li>
+                                                <li>Start developing DAPP over it.</li>
+                                                <li>Modify based on you need.</li>
+                                            </ul>
 
-								<section id="nirvana" class="doc-section">
-									<h2 class="section-title">Nirvana</h2>
-									<div class="section-block">
-										<p>It is an Open Source Framework for Blockchain Infrastructure setup. Following features are in plan for Nirvana upcoming releases:
-											
-											</p>
-											<ol>
-													<li>Support of multi-cloud (AWS, Azure, GCP etc.)</li>
-													<li>Support of differnt Blockchain frameworks like Ethereum, NEO etc.</li>
-													
-												  </ol>
-						 
-									</div>
-								</section>
-								<section id="download-section" class="doc-section">
-										<h2 class="components">Components</h2>
-										<div class="section-block">
-											
-												<ol>
-														<li>REST API Interface: Generic and simple to use API’s as a wrapper on Blockchain frameworks like Ethereum.</li>
-														<li>Configuration Console: An interface to provide inputs for your Blockchain infrastructure setup.</li>
-														<li>Event Hander: It enables the DApp’s for differnt events communication.</li>
-													  </ol>
-							 
-										</div>
-									</section>
-									<section id="whynirvana" class="doc-section">
-											<h2 class="section-title">Why Nirvana</h2>
-											<div class="section-block">
-												
-													<ol>
-															<li>It is easy to use.</li>
-															<li>Developers / Companies can focus on their actual Blockchain application.</li>
-															<li>No vendor locking due to multi-cloud support.</li>
-														  </ol>
-								 
-											</div>
-										</section>
-										<section id="aboutus" class="doc-section">
-												<h2 class="section-title">About Us</h2>
-												<div class="section-block">
-													<p>Nirvana is originated by Transility, an ‘end-to-end’ IT product development and consultancy company. Transility has been working with some of the leading USA companies from more than a decade, offering its technology expertise and experience. For more information, visit: http://transility.com
-														
-														</p>
-													
-									 
-												</div>
-											</section>
-								<!--//doc-section-->
-								
-								<!--//doc-section-->
-								
-							</div>
-							<!--//content-inner-->
-						</div>
-						<!--//doc-content-->
+                                            <h3 class="block-title"> Handling Call-backs Promises Events </h3>
+                                            <p>
+                                                To help Nirwana integrate into different projects with different we
+                                                provide simple way to communicate and handle various events and
+                                                call-backs generated by Ethereum Network
+                                            </p>
+                                            <p>
+                                                As web3.js returns Call-back , Promises and Eventes to chain functions,
+                                                nirwana provide simple way to handle these
+                                            </p>
+                                            <p>
+                                                Callback, Promises are handled as RestAPI response (Json Response) and
+                                                the Events are handled using Socket communication where various type of
+                                                event data will be received as Json.
+                                            </p>
+                                           
 
-					</div>
-				</div>
-			</div>
-
-			<div id="bottom" class="bottom text-center">
-				<a href="#about">
-					<i class="ion-ios7-arrow-down"></i>
-				</a>
-			</div>
-		</div>
-		<!-- overlay-1 -->
-	</div>
-	<!-- wrapper -->
-
-
-
-
-
-
-	<!-- footer -->
-	<section id="footer" class="main-footer">
-		<div class="row">
-			<div class="logo text-center">
-				<h1>NIRVANA</h1>
-			</div>
-		</div>
-		<div class="row">
-			<div class="copyright text-center">
-				<p> © 2019 Nirvana. Designed and Developed by
-					<a href="http://transility.com">
-						<span class="theme">Transility</span>
-					</a>
-				</p>
-			</div>
-		</div>
-	</section>
-	<!-- footer -->
-
-	<!-- js -->
-	<script>
-		$(document).ready(function () {
-			$("#client-speech").owlCarousel({
-				autoPlay: 3000,
-				navigation: false, // Show next and prev buttons
-				slideSpeed: 700,
-				paginationSpeed: 1000,
-				singleItem: true
-			});
-		});
-	</script>
-	<script>
-		new WOW().init();
-	</script>
-	<script>
-		$(function () {
-			// init Isotope
-			var $container = $('.isotope').isotope
-				({
-					itemSelector: '.element-item',
-					layoutMode: 'fitRows'
-				});
+                                            <div id="javascript" class="section-block">
+                                                <div class="code-block">
+                                                    <h6>For example below mentioned events are generated by block chain which can be handled </h6>
+                                                    <pre><code class="language-javascript">
+                                                        
+    web3.eth.sendTransaction({from: '0x123...', data: '0x432...'}) .once('transactionHash', function(hash){ ... }) .once('receipt', function(receipt){ ... })
+    .on('confirmation', function(confNumber, receipt){ ... }) .on('error', function(error){ ... }) 
+    .then(function(receipt){
+    // will be fired once the receipt is mined 
+    }); 
+                                                           </code></pre>
+                                                </div>
+                                                <!--//code-block-->
+                                            </div>
+                                            <div id="javascript" class="section-block">
+                                                    <div class="code-block">
+                                                        <h6>Using below mentioned code we can handle any event generated by block chain  </h6>
+                                                        <pre><code class="language-javascript">
+                                                            
+    var chat = io.connect('http://localhost/chat')
+    , news = io.connect('http://localhost/news');
+    
+    chat.on('connect', function () {
+    chat.emit('hi!');
+    });
+    
+    news.on('news', function () {
+    news.emit('woot');
+    });
+                                                             
+                                                               </code></pre>
+                                                    </div>
+                                                    <!--//code-block-->
+                                                </div>
+                                            <p>
+                                                    Similarly, for android, iOS and other platform same code can be ported to handle blockchain events.
+                                            </p>
 
 
-			// bind filter button click
-			$('#filters').on('click', 'button', function () {
-				var filterValue = $(this).attr('data-filter');
-				// use filterFn if matches value
-				$container.isotope({ filter: filterValue });
-			});
+                                            <!-- <a href="https://themes.3rdwavemedia.com" class="btn btn-green" target="_blank"><i
+                                                        class="fas fa-download"></i> Download PrettyDocs</a> -->
+                                        </div>
+                                    </section>
 
-			// change is-checked class on buttons
-			$('.button-group').each(function (i, buttonGroup) {
-				var $buttonGroup = $(buttonGroup);
-				$buttonGroup.on('click', 'button', function () {
-					$buttonGroup.find('.is-checked').removeClass('is-checked');
-					$(this).addClass('is-checked');
-				});
-			});
-		
-	
+                                </div>
+
+                            </div>
 
 
 
-	
 
-		});
-	</script>
-	<!-- <script src="js/tab-functions.js"></script> -->
-	<script src="js/jquery-ui-1.10.3.min.js"></script>
-	<script src="js/jquery.knob.js"></script>
-	<script src="js/daterangepicker.js"></script>
-	<script src="js/bootstrap3-wysihtml5.all.min.js"></script>
-	<!-- <script src="js/dashboard.js"></script> -->
+
+                        </div>
+                        <!--//content-inner-->
+                    </div>
+                    <!--//doc-content-->
+
+                    <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+                        <div id="doc-nav" class="doc-nav">
+
+                            <nav id="doc-menu" class="nav doc-menu flex-column nav-pills sticky">
+                                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                    aria-orientation="vertical">
+                                    <a class="nav-link active scrollto" href="#ethereum-overview"
+                                        id="v-pills-ethereum-overview-tab" data-toggle="pill" role="tab"
+                                        aria-controls="v-pills-home" aria-selected="true">Overview of Ethereum</a>
+
+
+
+
+
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#ethereum-accounts">Ethereum Accounts</a>
+                                        <a class="nav-link scrollto" href="#ethereum-virtual">Ethereum Virtual
+                                            Machine</a>
+                                    </nav>
+                                    <a class="nav-link scrollto" href="#v-pills-geting-started"
+                                        id="v-pills-getting-started-tab" data-toggle="pill" role="tab"
+                                        aria-controls="v-pills-home" aria-selected="true">Getting Started </a>
+
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#ethereum-accounts">Setting Up Nirwana</a>
+                                        <a class="nav-link scrollto" href="#ethereum-virtual">Handling Call-backs
+                                            Promises Events</a>
+                                    </nav>
+
+                                    <!--//nav-->
+                                    <!-- <a class="scrollto" href="#code-section">Code</a> -->
+                                    <!-- <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#html">HTML</a>
+                                        <a class="nav-link scrollto" href="#css">CSS</a>
+                                        <a class="nav-link scrollto" href="#sass">Sass</a>
+                                        <a class="nav-link scrollto" href="#less">LESS</a>
+                                        <a class="nav-link scrollto" href="#javascript">JavaScript</a>
+                                        <a class="nav-link scrollto" href="#python">Python</a>
+                                        <a class="nav-link scrollto" href="#php">PHP</a>
+                                        <a class="nav-link scrollto" href="#handlebars">Handlebars</a>
+                                    </nav> -->
+                                    <!--//nav-->
+                                    <!-- <a class="nav-link scrollto" href="#callouts-section">Callouts</a>
+                                    <a class="nav-link scrollto" href="#tables-section">Tables</a>
+                                    <a class="nav-link scrollto" href="#buttons-section">Buttons</a>
+                                    <a class="nav-link scrollto" href="#video-section">Video</a>
+                                    <a class="nav-link scrollto" href="#icons-section">Icons</a> -->
+                                </div>
+                            </nav>
+                            <!--//doc-menu-->
+
+                        </div>
+                    </div>
+                    <!--//doc-sidebar-->
+                </div>
+                <!--//doc-body-->
+            </div>
+            <!--//container-->
+        </div>
+        <!--//doc-wrapper-->
+
+
+
+    </div>
+    <!--//page-wrapper-->
+
+    <section id="footer" class="main-footer">
+        <div class="row">
+            <div class="logo text-center" style="margin-left: 44%">
+                <h1>NIRVANA</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="copyright text-center" style="margin-left: 39%">
+                <p> © 2019 Nirvana. Designed and Developed by <a href="http://transility.com"><span
+                            class="theme">Transility</span></a></p>
+            </div>
+        </div>
+    </section><!-- footer -->
+
+    <!-- Main Javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="plugins/prism/prism.js"></script>
+    <script type="text/javascript" src="plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="plugins/stickyfill/dist/stickyfill.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 
 </body>
 
