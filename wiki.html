@@ -30,6 +30,9 @@
 			background-color: #75c181 !important;
 			color: #fff !important;
 		}
+        .nav {
+            flex-wrap: inherit !important;
+        }
 		</style>
 
 </head>
@@ -58,7 +61,7 @@
             <div class="container">
                 <div id="doc-header" class="doc-header text-center">
                     <h1 class="doc-title"><i class="icon fa fa-paper-plane"></i>Api Docs</h1>
-                    <div class="meta"><i class="far fa-clock"></i> Last updated: February 22nd, 2019</div>
+                    <div class="meta"><i class="far fa-clock"></i> Last updated: February 22nd, 2019 (this doc is under construction)</div>
                 </div>
                 <!--//doc-header-->
                 <div class="doc-body row">
@@ -228,6 +231,64 @@
 
                                 </div>
 
+                                <div class="tab-pane fade" id="v-pills-eth" role="tabpanel"
+                                    aria-labelledby="v-pills-eth-tab">
+
+                                    <section id="eth-section" class="doc-section">
+                                            <h2 class="section-title">ETH </h2>
+                                            <div class="section-block">
+                                                <h5><li>getNodeStatus</li></h5>
+                                                <br>
+                                                <h6>EndPoint</h6>
+                                                
+                                                <p>GET: </p>
+                                                <code>v1/eth/getNodeStatus</code>
+                                                <br>
+                                            </br>
+
+                                                <h6>Description</h6>
+                                                <p>The Default Block which will be used for the requests</p>
+                                                <br>
+                                        
+
+                                                <h6>Response</h6>
+                                                <p>Success:</p>
+                                                <div id="javascript" >
+                                                        <div class="code-block">
+                                                          
+                                                            <pre><code class="language-javascript">
+{
+    peerCount: result,                                                                                               
+    sucess: true
+}
+                                                                 
+                                                                   </code></pre>
+                                                        </div>
+                                                        <!--//code-block-->
+                                                    </div>
+
+                                                    <p>Error:</p>
+                                                    <div id="javascript" >
+                                                            <div class="code-block">
+                                                              
+                                                                <pre><code class="language-javascript">
+{
+    error: errorObj,
+    sucess: false
+}
+                                                                  
+                                                                     
+                                                                       </code></pre>
+                                                            </div>
+                                                            <!--//code-block-->
+                                                        </div>
+                                             
+                                           
+                                            </div>
+                                        </section>
+
+                                </div>
+
                             </div>
 
 
@@ -242,7 +303,7 @@
                     <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
                         <div id="doc-nav" class="doc-nav">
 
-                            <nav id="doc-menu" class="nav doc-menu flex-column nav-pills sticky">
+                            <nav id="doc-menu" class="nav doc-menu flex-column nav-pills sticky" style="overflow-y: scroll; max-height: 720px; flex-wrap: inherit !important;">
                                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
                                     aria-orientation="vertical">
                                     <a class="nav-link active scrollto" href="#ethereum-overview"
@@ -266,9 +327,36 @@
                                         <a class="nav-link scrollto" href="#ethereum-accounts">Setting Up Nirwana</a>
                                         <a class="nav-link scrollto" href="#ethereum-virtual">Handling Call-backs
                                             Promises Events</a>
-																		</nav>
+                                                                        </nav>
+                                                                        <a class="nav-link api-topic" 
+                                         data-toggle="pill" role="tab" style=" padding-left: 15%;font-size: 19px;"
+                                        aria-controls="v-pills-home" aria-selected="true">Nirvana API V1.0 </a>
 																		
-																	
+                                        <a class="nav-link scrollto" href="#v-pills-eth"
+                                        id="v-pills-eth-tab" data-toggle="pill" role="tab"
+                                        aria-controls="v-pills-home" aria-selected="true">ETH </a>
+                                        
+                                        <nav class="doc-sub-menu nav flex-column">
+                                            <a class="nav-link scrollto" href="#getnodestatus">getNodeStatus</a>
+                                            <a class="nav-link scrollto" href="#createwallet">createWallet</a>
+                                            <a class="nav-link scrollto" href="#getaccounts">getAccounts</a>
+                                            <a class="nav-link scrollto" href="#getbalance">getBalance</a>
+                                            <a class="nav-link scrollto" href="#getblock">getBlock</a>
+                                            <a class="nav-link scrollto" href="#getnetworktype">getNetworkType</a>
+                                            <a class="nav-link scrollto" href="#issyncing">isSyncing</a>
+                                            <a class="nav-link scrollto" href="#getwork">getWork</a>
+                                            <a class="nav-link scrollto" href="#createwallet">submitWork</a>
+                                            <a class="nav-link scrollto" href="#createwallet">getPastLogs</a>
+                                            <a class="nav-link scrollto" href="#createwallet">estimateGas</a>
+                                            <a class="nav-link scrollto" href="#createwallet">call</a>
+                                            <a class="nav-link scrollto" href="#createwallet">signTransaction</a>
+                                            <a class="nav-link scrollto" href="#createwallet">sign</a>
+                                            <a class="nav-link scrollto" href="#createwallet">setSignedTransaction</a>
+                                            <a class="nav-link scrollto" href="#createwallet">getTransaction</a>
+                                            <a class="nav-link scrollto" href="#createwallet">getTransactionFromBlock</a>
+                                            <a class="nav-link scrollto" href="#createwallet">getUncle</a>
+                                            <a class="nav-link scrollto" href="#createwallet">getBlockTransactionCount</a>
+
 
                                     <!--//nav-->
                                     <!-- <a class="scrollto" href="#code-section">Code</a> -->
