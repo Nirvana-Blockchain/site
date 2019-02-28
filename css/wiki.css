@@ -882,38 +882,38 @@ select {
   background: none;
 }
 
-.doc-menu .nav-link.active {
+/* .doc-menu .nav-link.active {
   background: none;
   color: #40babd;
   font-weight: 600;
-}
+} */
 
-.body-green .doc-menu .nav-link.active {
+.body-green .doc-menu  {
   color: #75c181;
   border-color: #75c181;
 }
 
-.body-blue .doc-menu .nav-link.active {
+.body-blue .doc-menu {
   color: #58bbee;
   border-color: #58bbee;
 }
 
-.body-orange .doc-menu .nav-link.active {
+.body-orange .doc-menu {
   color: #F88C30;
   border-color: #F88C30;
 }
 
-.body-red .doc-menu .nav-link.active {
+.body-red .doc-menu  {
   color: #f77b6b;
   border-color: #f77b6b;
 }
 
-.body-pink .doc-menu .nav-link.active {
+.body-pink .doc-menu  {
   color: #EA5395;
   border-color: #EA5395;
 }
 
-.body-purple .doc-menu .nav-link.active {
+.body-purple .doc-menu {
   color: #8A40A7;
   border-color: #8A40A7;
 }
@@ -948,7 +948,7 @@ select {
 }
 
 .doc-sub-menu .nav-link.active {
-  background: none;
+  
   color: #40babd;
 }
 
